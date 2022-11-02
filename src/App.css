@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 .App {
-
 	font-family: 'Poppins', sans-serif;
 	height: 100vh;
 	width: 100vw;
@@ -9,22 +8,17 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 }
 
 .options-menu {
-
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	width: min(350px, 80vw);
 	justify-content: space-between;
 	margin-top: 2vh;
-
 }
 
 .option {
-
 	border: none;
 	font-family: 'Poppins', sans-serif;
 	background: #3498db;
@@ -34,41 +28,36 @@
 	border-radius: 10px;
 	transition: all 0.5s;
 	margin-top: 10px;
-
 }
 
 .option:hover {
-
 	opacity: 0.6;
 	cursor: pointer;
-
 }
 
 .path-grid {
-
 	display: grid;
 	margin: 2vh 0 5vh;
 	/* width: min(70vw, 70vh); */
 	/* height: min(70vw, 70vh); */
 	border: 10px solid black;
-
+	/* grid-template-columns: repeat(10, 10px); */
+	/* grid-template-rows: repeat(10, 10px); */
 }
 
 .grid-square {
-
 	background: none;
 	height: 10px;
 	width: 10px;
 	border: none;
 	transition: all 0.5s;
-
+	margin: 0;
+	padding: 0;
 }
 
 .grid-square:hover {
-
 	opacity: 0.5;
 	cursor: pointer;
-
 }
 
 .info-text {
@@ -100,3 +89,15 @@
 	background: red;
 }
 
+@media screen and (max-width: 700px) {
+	.option {
+		width: 20vw;
+		height: 40px;
+	}
+}
+
+@media (pointer: none), (pointer: coarse) {
+	.option:hover {
+		opacity: 1;
+	}
+}

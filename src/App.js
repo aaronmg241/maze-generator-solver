@@ -63,11 +63,9 @@ function App() {
 	function determineGridSize(viewport) {
 		const newNumRows = Math.round((viewport.innerHeight * 0.7) / 10);
 		const newNumCols = Math.round((viewport.innerWidth * 0.7) / 10);
-
 		const grid = document.getElementsByClassName('path-grid')[0];
 		grid.style.gridTemplateRows = 'repeat(' + newNumRows + ', 10px)';
 		grid.style.gridTemplateColumns = 'repeat(' + newNumCols + ', 10px)';
-
 		setNumCols(newNumCols);
 		setNumRows(newNumRows);
 	}
